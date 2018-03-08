@@ -1,0 +1,2731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentReport xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <projects>
+    <project name="PrestServ" location="C:\Users\ll\Desktop\PRESTSERV\PRESTSERV.vbp" type="Exe">
+      <members>
+        <form name="frm_principal" location="C:\Users\ll\Desktop\PRESTSERV\frm_principal.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="38" />
+            <metric name="comments" value="2" />
+            <metric name="code" value="98" />
+            <metric name="layout" value="119" />
+          </metrics>
+          <members>
+            <variable name="arquivo" type="DAO.Database" />
+            <variable name="area" type="DAO.Workspace" />
+            <variable name="tab_aux" type="Variant" />
+            <variable name="tab_imp" type="DAO.Recordset" />
+            <variable name="tot_recibo" type="DAO.Recordset" />
+            <variable name="cod" type="Long" />
+            <sub name="Form_Load">
+              <parameters />
+              <variables>
+                <variable name="teste" type="DAO.Recordset" />
+              </variables>
+            </sub>
+            <sub name="Form_Resize">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="mnu_adicionar_cli_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_con_outro_bd_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_grava_emp_tel_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_help_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_help2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_orcamento_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_pesquisa_cli_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_rel_certificado_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_rel_orcamento_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_rel_recibo_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_senha_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_vencimentos_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnusair_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnuteste_Click">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Comm_busca_bd" type="MSComDlg.CommonDialog" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_principal" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_adicionar_cli" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_cli" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_con_outro_bd" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_grava_emp_tel" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_help" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_help1" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_help2" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_orcamento" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_pesquisa_cli" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_rel" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_rel_certificado" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_rel_orcamento" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_rel_recibo" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="MNU_SEG" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_senha" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnu_vencimentos" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnusair" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnuseparetor1" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnuseparetor2" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnuseparetor3" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnuseparetor4" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mnuseparetor7" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Picture1" type="VB.PictureBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="separetor11" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="SEPARETOR13" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="separetor20" type="VB.Menu" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="FRMPESQUISA_CLI" location="C:\Users\ll\Desktop\PRESTSERV\FRMPESQUISA_CLI.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="87" />
+            <metric name="comments" value="3" />
+            <metric name="code" value="239" />
+            <metric name="layout" value="572" />
+          </metrics>
+          <members>
+            <variable name="cad_cli" type="DAO.Recordset" />
+            <sub name="limpa_cad">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="pesquisa">
+              <parameters>
+                <parameter name="SQL" type="Variant" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="mostra_cad">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables>
+                <variable name="orcatemp" type="DAO.Recordset" />
+                <variable name="msg" type="Integer" />
+                <variable name="x" type="String" />
+              </variables>
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command4_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command5_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command6_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="email_DblClick">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="ender_KeyDown">
+              <parameters>
+                <parameter name="KeyCode" type="Integer" />
+                <parameter name="Shift" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="List1_Click">
+              <parameters />
+              <variables>
+                <variable name="pesquisa" type="String" />
+                <variable name="texto" type="String" />
+                <variable name="carac" type="String" />
+                <variable name="i" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="nome_KeyDown">
+              <parameters>
+                <parameter name="KeyCode" type="Integer" />
+                <parameter name="Shift" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="Option1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option2_Click">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="bairro" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="cep" type="MSMask.MaskEdBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="cidade" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="cod" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command4" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command5" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command6" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="data_m" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="data_s" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="email" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="ender" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="FRMPESQUISA_CLI" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label1" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label10" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label3" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label4" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label5" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label6" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label7" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label8" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label9" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line1" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line2" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line3" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line4" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List1" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="mensagem" type="MSMAPI.MAPIMessages" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="nome" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option1" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option2" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="sessao" type="MSMAPI.MAPISession" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="telefone" type="MSMask.MaskEdBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_orcamento" location="C:\Users\ll\Desktop\PRESTSERV\frm_orcamento.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="131" />
+            <metric name="comments" value="7" />
+            <metric name="code" value="272" />
+            <metric name="layout" value="477" />
+          </metrics>
+          <members>
+            <variable name="cod_cli" type="Variant" />
+            <variable name="numero_ant" type="Long" />
+            <variable name="orcamento" type="Variant" />
+            <variable name="cad_cli" type="DAO.Recordset" />
+            <variable name="cod_orca" type="Long" />
+            <variable name="nome_pesq" type="String" />
+            <sub name="Command1_Click">
+              <parameters />
+              <variables>
+                <variable name="cod_cli" type="Variant" />
+              </variables>
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables>
+                <variable name="k" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command4_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command5_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command6_Click">
+              <parameters />
+              <variables>
+                <variable name="msg" type="Integer" />
+                <variable name="indice" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="Command7_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command8_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command9_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="LINHA_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="List1_Click">
+              <parameters />
+              <variables>
+                <variable name="cod" type="String" />
+              </variables>
+            </sub>
+            <sub name="List2_Click">
+              <parameters />
+              <variables>
+                <variable name="k" type="String" />
+                <variable name="i" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="nome_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="nome_GotFocus">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="nome_LostFocus">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="texto_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mostra_orca">
+              <parameters />
+              <variables>
+                <variable name="orca" type="DAO.Recordset" />
+              </variables>
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command4" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command5" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command6" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command7" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command8" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command9" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="dados_cli" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="data" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Font" type="PrestServ.Font" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_orcamento" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="IMPRESSORA" type="Crystal.CrystalReport" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label4" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line1" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line2" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line3" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line4" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line5" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line6" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="LINHA" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List1" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List2" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="nome" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="numero" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="option1" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option2" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="texto" type="RichTextLib.RichTextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_imp_orca" location="C:\Users\ll\Desktop\PRESTSERV\frm_imp_orca.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="66" />
+            <metric name="comments" value="1" />
+            <metric name="code" value="158" />
+            <metric name="layout" value="323" />
+          </metrics>
+          <members>
+            <variable name="tab_orca" type="DAO.Recordset" />
+            <variable name="cod_orca" type="Long" />
+            <variable name="cod" type="Long" />
+            <sub name="Command1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables>
+                <variable name="tab_aux" type="DAO.Recordset" />
+              </variables>
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables>
+                <variable name="tab_aux" type="DAO.Recordset" />
+              </variables>
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="List1_Click">
+              <parameters />
+              <variables>
+                <variable name="tab_aux" type="DAO.Recordset" />
+              </variables>
+            </sub>
+            <sub name="List2_Click">
+              <parameters />
+              <variables>
+                <variable name="i" type="Integer" />
+                <variable name="k" type="String" />
+                <variable name="pesquisa" type="String" />
+                <variable name="mes" type="String" />
+                <variable name="dia" type="String" />
+                <variable name="ano" type="String" />
+                <array name="matriz" type="String" base="0" size="13" />
+              </variables>
+            </sub>
+            <sub name="nome_Change">
+              <parameters />
+              <variables>
+                <variable name="cad_cli" type="DAO.Recordset" />
+              </variables>
+            </sub>
+            <sub name="Option2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option3_Click">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="data" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Font" type="PrestServ.Font" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame1" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame2" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_imp_orca" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="IMPRESSORA" type="Crystal.CrystalReport" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label1" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line1" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List1" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List2" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="nome" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Numero" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option2" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option3" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="titulo" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_certif" location="C:\Users\ll\Desktop\PRESTSERV\frm_ceritf.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="69" />
+            <metric name="comments" value="6" />
+            <metric name="code" value="169" />
+            <metric name="layout" value="380" />
+          </metrics>
+          <members>
+            <variable name="tab_aux" type="DAO.Recordset" />
+            <variable name="cad_cli" type="DAO.Recordset" />
+            <variable name="cod" type="Long" />
+            <externalmethod name="Sleep" library="kernel32">
+              <parameters>
+                <parameter name="dwMilliseconds" type="Long" />
+              </parameters>
+            </externalmethod>
+            <sub name="Command1_Click">
+              <parameters />
+              <variables>
+                <variable name="imp_certif" type="DAO.Recordset" />
+                <variable name="mes" type="String" />
+                <variable name="dia" type="String" />
+                <variable name="ano" type="String" />
+                <variable name="datatexto" type="String" />
+                <variable name="prox_numer" type="Integer" />
+                <array name="matriz" type="String" base="0" size="13" />
+              </variables>
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="ender_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="List1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="nome_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option3_Click">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="bairro" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="data" type="MSMask.MaskEdBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="ender" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_certif" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="IMPRESSORA" type="Crystal.CrystalReport" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label1" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label3" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label4" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label5" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label6" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line1" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List1" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="nome" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option2" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option3" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="periodo" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="titulo" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <module name="geral" location="C:\Users\ll\Desktop\PRESTSERV\Controle_clientes.bas" found="true">
+          <metrics>
+            <metric name="blanks" value="102" />
+            <metric name="comments" value="36" />
+            <metric name="code" value="201" />
+            <metric name="layout" value="0" />
+          </metrics>
+          <members>
+            <type name="record">
+              <members>
+                <variable name="disco" type="String" />
+                <variable name="senha" type="String" />
+                <variable name="nome_emp" type="String" />
+                <variable name="data" type="String" />
+                <variable name="mes_ano" type="String" />
+                <variable name="n_registro" type="String" />
+              </members>
+            </type>
+            <variable name="senha_lida" type="String" />
+            <variable name="demo" type="Boolean" />
+            <variable name="numero_registro_software" type="Variant" />
+            <variable name="senha" type="String" />
+            <variable name="empresa" type="String" />
+            <variable name="con_bd" type="String" />
+            <variable name="arquivo" type="DAO.Database" />
+            <variable name="area" type="DAO.Workspace" />
+            <sub name="Main">
+              <parameters />
+              <variables />
+            </sub>
+            <function name="GetDriveSerialNumber" returntype="Long">
+              <parameters>
+                <parameter name="DriveLetter" type="String" />
+              </parameters>
+              <variables>
+                <variable name="Drv" type="Object" />
+                <com-variable name="fso" type="Scripting.FileSystemObject" />
+                <variable name="DriveSerial" type="Variant" />
+              </variables>
+            </function>
+            <sub name="cria_arq_ll">
+              <parameters />
+              <variables>
+                <variable name="registro" type="PrestServ.record" />
+                <variable name="texto" type="String" />
+                <variable name="EMP" type="String" />
+                <variable name="telef" type="String" />
+                <variable name="disco" type="String" />
+              </variables>
+            </sub>
+            <sub name="testa_copia">
+              <parameters />
+              <variables>
+                <variable name="registro" type="PrestServ.record" />
+                <variable name="disco" type="String" />
+                <variable name="b" type="String" />
+                <array name="CODIGO_DESB" type="String" base="0" size="21" />
+                <variable name="x" type="Variant" />
+              </variables>
+            </sub>
+            <sub name="testa_senha">
+              <parameters />
+              <variables>
+                <variable name="registro" type="geral.record" />
+                <variable name="vezes" type="Integer" />
+                <variable name="x" type="Variant" />
+              </variables>
+            </sub>
+            <sub name="grava_arq_con_bd">
+              <parameters>
+                <parameter name="con_bd" type="Variant" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="verifica_senha">
+              <parameters />
+              <variables />
+            </sub>
+            <function name="testa_codigo_registro" returntype="">
+              <parameters>
+                <parameter name="codigo_registro" type="String" />
+                <parameter name="data_teste" type="Date" />
+                <parameter name="tipo_verif" type="String" />
+              </parameters>
+              <variables>
+                <variable name="b" type="Variant" />
+                <variable name="pos_vetor" type="Integer" />
+                <array name="numeros_registros_validos" type="String" base="0" size="50" />
+                <variable name="i" type="Variant" />
+              </variables>
+            </function>
+          </members>
+          <events />
+        </module>
+        <form name="frm_senha" location="C:\Users\ll\Desktop\PRESTSERV\frm_senha.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="15" />
+            <metric name="comments" value="1" />
+            <metric name="code" value="68" />
+            <metric name="layout" value="132" />
+          </metrics>
+          <members>
+            <sub name="Command1_Click">
+              <parameters />
+              <variables>
+                <variable name="registro" type="geral.record" />
+                <variable name="x" type="String" />
+              </variables>
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Text1_Change">
+              <parameters />
+              <variables>
+                <variable name="i" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="Text2_Change">
+              <parameters />
+              <variables>
+                <variable name="i" type="Integer" />
+              </variables>
+            </sub>
+            <function name="verifica_integridade" returntype="">
+              <parameters />
+              <variables />
+            </function>
+          </members>
+          <events />
+          <controls>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_senha" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label1" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Text1" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Text2" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_recibo" location="C:\Users\ll\Desktop\PRESTSERV\frm_recibo.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="90" />
+            <metric name="comments" value="4" />
+            <metric name="code" value="174" />
+            <metric name="layout" value="412" />
+          </metrics>
+          <members>
+            <variable name="arquivo" type="DAO.Database" />
+            <variable name="area" type="DAO.Workspace" />
+            <variable name="tab_aux" type="Variant" />
+            <variable name="tab_imp" type="DAO.Recordset" />
+            <variable name="cod" type="Long" />
+            <externalmethod name="Sleep" library="kernel32">
+              <parameters>
+                <parameter name="dwMilliseconds" type="Long" />
+              </parameters>
+            </externalmethod>
+            <sub name="Command1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="ender_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="List1_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables>
+                <variable name="mes" type="String" />
+                <variable name="ano" type="String" />
+                <variable name="dia" type="String" />
+                <array name="matriz" type="String" base="0" size="13" />
+              </variables>
+            </sub>
+            <sub name="mnu_sair_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="mnu_senha_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="nome_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Option3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="valor_LostFocus">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="ativ_1" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="ativ_2" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="data" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="ender" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Font" type="PrestServ.Font" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame1" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_recibo" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="import_1" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="import_2" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="IMPRESSORA" type="Crystal.CrystalReport" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label3" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label4" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label5" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line1" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="List1" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="nome" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option2" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Option3" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="titulo" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="valor" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="Identif" location="C:\Users\ll\Desktop\PRESTSERV\frm_identif.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="7" />
+            <metric name="code" value="12" />
+            <metric name="layout" value="54" />
+          </metrics>
+          <members>
+            <sub name="Text1_KeyDown">
+              <parameters>
+                <parameter name="KeyCode" type="Integer" />
+                <parameter name="Shift" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Font" type="PrestServ.Font" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Identif" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label1" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Text1" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_cad_cli" location="C:\Users\ll\Desktop\PRESTSERV\frm_cad_cli.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="41" />
+            <metric name="comments" value="1" />
+            <metric name="code" value="79" />
+            <metric name="layout" value="401" />
+          </metrics>
+          <members>
+            <variable name="cad_cli" type="DAO.Recordset" />
+            <sub name="bt_pesq_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="bt_orca_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command1_Click">
+              <parameters />
+              <variables>
+                <variable name="x" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="Command2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="limpa_form_cli">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="nome_Change">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Bairro" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="bt_orca" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="bt_pesq" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="cep" type="MSMask.MaskEdBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="cidade" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command1" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="email" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Endereco" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_cad_cli" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label2" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label3" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label4" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label5" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label6" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label7" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label8" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label9" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line2" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="nome" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="servico" type="MSMask.MaskEdBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="telefone" type="MSMask.MaskEdBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_vencimento" location="C:\Users\ll\Desktop\PRESTSERV\frm_vencimento.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="67" />
+            <metric name="comments" value="16" />
+            <metric name="code" value="150" />
+            <metric name="layout" value="336" />
+          </metrics>
+          <members>
+            <variable name="db1" type="DAO.Recordset" />
+            <sub name="Command1_Click">
+              <parameters>
+                <parameter name="Index" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="Command2_Click">
+              <parameters>
+                <parameter name="Index" type="Integer" />
+              </parameters>
+              <variables>
+                <variable name="IMPRESSORA" type="Crystal.CrystalReport" />
+              </variables>
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command4_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="contac_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="RERODAR">
+              <parameters />
+              <variables>
+                <variable name="CAMPO" type="String" />
+              </variables>
+            </sub>
+            <sub name="LISTAR_CLIENTES">
+              <parameters />
+              <variables>
+                <variable name="QT" type="Integer" />
+                <variable name="pos" type="Integer" />
+                <variable name="db1" type="DAO.Recordset" />
+              </variables>
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="LISTA_CLI_DblClick">
+              <parameters />
+              <variables>
+                <variable name="op" type="Integer" />
+              </variables>
+            </sub>
+            <sub name="ord_e_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="ord_n_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="sem_contac_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="todos_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="venc_Click">
+              <parameters />
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Command1" type="VB.CommandButton" control-array="true" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2" type="VB.CommandButton" control-array="true" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command1(0)" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command2(0)" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command4" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="contac" type="VB.CheckBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame1" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame2" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame3" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_vencimento" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="impressora1" type="Crystal.CrystalReport" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="impressora2" type="Crystal.CrystalReport" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="lim" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="LISTA_CLI" type="VB.ListBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="ord_e" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="ord_n" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="qt_CLI" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="sem_contac" type="VB.CheckBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="todos" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="venc" type="VB.OptionButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="Info_sistema" location="C:\Users\ll\Desktop\PRESTSERV\INfo_sistema.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="26" />
+            <metric name="comments" value="51" />
+            <metric name="code" value="63" />
+            <metric name="layout" value="179" />
+          </metrics>
+          <members>
+            <externalmethod name="RegOpenKeyEx" library="advapi32">
+              <parameters>
+                <parameter name="hKey" type="Long" />
+                <parameter name="lpSubKey" type="String" />
+                <parameter name="ulOptions" type="Long" />
+                <parameter name="samDesired" type="Long" />
+                <parameter name="phkResult" type="Long" />
+              </parameters>
+            </externalmethod>
+            <externalmethod name="RegQueryValueEx" library="advapi32">
+              <parameters>
+                <parameter name="hKey" type="Long" />
+                <parameter name="lpValueName" type="String" />
+                <parameter name="lpReserved" type="Long" />
+                <parameter name="lpType" type="Long" />
+                <parameter name="lpData" type="String" />
+                <parameter name="lpcbData" type="Long" />
+              </parameters>
+            </externalmethod>
+            <externalmethod name="RegCloseKey" library="advapi32">
+              <parameters>
+                <parameter name="hKey" type="Long" />
+              </parameters>
+            </externalmethod>
+            <sub name="cmdSysInfo_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="cmdOK_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="StartSysInfo">
+              <parameters />
+              <variables>
+                <variable name="rc" type="Long" />
+                <variable name="SysInfoPath" type="String" />
+              </variables>
+            </sub>
+            <function name="GetKeyValue" returntype="Boolean">
+              <parameters>
+                <parameter name="KeyRoot" type="Long" />
+                <parameter name="KeyName" type="String" />
+                <parameter name="SubKeyRef" type="String" />
+                <parameter name="KeyVal" type="String" />
+              </parameters>
+              <variables>
+                <variable name="i" type="Long" />
+                <variable name="rc" type="Long" />
+                <variable name="hKey" type="Long" />
+                <variable name="hDepth" type="Long" />
+                <variable name="KeyValType" type="Long" />
+                <variable name="tmpVal" type="String" />
+                <variable name="KeyValSize" type="Long" />
+              </variables>
+            </function>
+          </members>
+          <events />
+          <controls>
+            <control name="Line1" type="VB.Line" control-array="true" count="1">
+              <data-bindings />
+            </control>
+            <control name="cmdOK" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="cmdSysInfo" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Font" type="PrestServ.Font" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Info_sistema" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="lblcomentarios" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="lblcompany" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="lblDescription" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="lblTitle" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="lblVersion" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Line1(0)" type="VB.Line" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="picIcon" type="VB.PictureBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="frm_cad_emp_tel" location="C:\Users\ll\Desktop\PRESTSERV\frm_cad_emp_tel.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="18" />
+            <metric name="code" value="37" />
+            <metric name="layout" value="160" />
+          </metrics>
+          <members>
+            <variable name="ARMAZENA_EMP_TEL" type="DAO.Recordset" />
+            <sub name="Command2_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Command3_Click">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="EMP_Change">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+            <sub name="grava_tel_emp">
+              <parameters>
+                <parameter name="EMP" type="String" />
+                <parameter name="TEL" type="String" />
+              </parameters>
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="Command2" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Command3" type="VB.CommandButton" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="EMP" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Font" type="PrestServ.Font" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Frame1" type="VB.Frame" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="frm_cad_emp_tel" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label3" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="Label4" type="VB.Label" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="TEL" type="VB.TextBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+        <form name="fmrHelp" location="C:\Users\ll\Desktop\PRESTSERV\fmrHelp.frm" found="true">
+          <metrics>
+            <metric name="blanks" value="5" />
+            <metric name="comments" value="1" />
+            <metric name="code" value="11" />
+            <metric name="layout" value="24" />
+          </metrics>
+          <members>
+            <sub name="Form_Load">
+              <parameters />
+              <variables />
+            </sub>
+            <sub name="Form_Unload">
+              <parameters>
+                <parameter name="Cancel" type="Integer" />
+              </parameters>
+              <variables />
+            </sub>
+          </members>
+          <events />
+          <controls>
+            <control name="AcroPDF1" type="VB.PictureBox" control-array="false" count="1">
+              <data-bindings />
+            </control>
+            <control name="fmrHelp" type="VB.Form" control-array="false" count="1">
+              <data-bindings />
+            </control>
+          </controls>
+        </form>
+      </members>
+      <methods>
+        <externalmethod name="Sleep">
+          <references>
+            <reference name="frm_certif.Command1_Click" uses="1" />
+            <reference name="frm_recibo.Command1_Click" uses="1" />
+          </references>
+        </externalmethod>
+        <externalmethod name="RegOpenKeyEx">
+          <references>
+            <reference name="Info_sistema.GetKeyValue" uses="1" />
+          </references>
+        </externalmethod>
+        <externalmethod name="RegQueryValueEx">
+          <references>
+            <reference name="Info_sistema.GetKeyValue" uses="1" />
+          </references>
+        </externalmethod>
+        <externalmethod name="RegCloseKey">
+          <references>
+            <reference name="Info_sistema.GetKeyValue" uses="2" />
+          </references>
+        </externalmethod>
+      </methods>
+      <libraries>
+        <library name="msderun" location="msderun.dll" friendlyname="Microsoft Data Environment Instance 1.0" version="1.0.0" found="false">
+          <members />
+        </library>
+        <library name="DAO" location="C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO350.DLL" friendlyname="Microsoft DAO 3.51 Object Library" version="4.0.0" found="true">
+          <members>
+            <member name="Database">
+              <members>
+                <member name="Close">
+                  <references>
+                    <reference name="frm_principal.Form_Unload" uses="1" />
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="OpenRecordset">
+                  <references>
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.List1_Click" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="Workspace">
+              <members>
+                <member name="OpenDatabase">
+                  <references>
+                    <reference name="frm_principal.Form_Load" uses="1" />
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Close">
+                  <references>
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="Recordset">
+              <members>
+                <member name="EOF">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command6_Click" uses="3" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="2" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="2" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="2" />
+                  </references>
+                </member>
+                <member name="Fields">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="4" />
+                    <reference name="FRMPESQUISA_CLI.mostra_cad" uses="10" />
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="1" />
+                    <reference name="frm_orcamento.List1_Click" uses="5" />
+                    <reference name="frm_orcamento.nome_Change" uses="6" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="6" />
+                    <reference name="frm_orcamento.mostra_orca" uses="2" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="6" />
+                    <reference name="frm_imp_orca.Form_Load" uses="3" />
+                    <reference name="frm_imp_orca.List1_Click" uses="3" />
+                    <reference name="frm_imp_orca.List2_Click" uses="6" />
+                    <reference name="frm_imp_orca.nome_Change" uses="6" />
+                    <reference name="frm_certif.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command3_Click" uses="6" />
+                    <reference name="frm_certif.ender_Change" uses="3" />
+                    <reference name="frm_certif.Form_Load" uses="3" />
+                    <reference name="frm_certif.List1_Click" uses="3" />
+                    <reference name="frm_certif.nome_Change" uses="3" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="4" />
+                  </references>
+                </member>
+                <member name="MoveNext">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command5_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command6_Click" uses="1" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="2" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="2" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                  </references>
+                </member>
+                <member name="RecordCount">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="1" />
+                  </references>
+                </member>
+                <member name="MovePrevious">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.Command5_Click" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.Command6_Click" uses="2" />
+                  </references>
+                </member>
+                <member name="Edit">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command1_Click" uses="2" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTA_CLI_DblClick" uses="1" />
+                    <reference name="frm_cad_emp_tel.grava_tel_emp" uses="1" />
+                  </references>
+                </member>
+                <member name="Update">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command1_Click" uses="2" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_cad_cli.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTA_CLI_DblClick" uses="1" />
+                    <reference name="frm_cad_emp_tel.grava_tel_emp" uses="1" />
+                  </references>
+                </member>
+                <member name="Delete">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="2" />
+                    <reference name="frm_certif.Command1_Click" uses="1" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                  </references>
+                </member>
+                <member name="BOF">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.Command5_Click" uses="3" />
+                  </references>
+                </member>
+                <member name="Close">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Form_Unload" uses="1" />
+                    <reference name="frm_orcamento.Form_Unload" uses="1" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Form_Unload" uses="1" />
+                    <reference name="frm_certif.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command2_Click" uses="1" />
+                    <reference name="frm_certif.Form_Unload" uses="1" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_cad_cli.Form_Unload" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                    <reference name="frm_vencimento.Form_Unload" uses="1" />
+                    <reference name="frm_cad_emp_tel.Form_Unload" uses="1" />
+                  </references>
+                </member>
+                <member name="FindFirst">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="2" />
+                    <reference name="frm_imp_orca.List2_Click" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTA_CLI_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="MoveFirst">
+                  <references>
+                    <reference name="frm_certif.Command1_Click" uses="2" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Index">
+                  <references>
+                    <reference name="frm_certif.List1_Click" uses="1" />
+                    <reference name="frm_cad_cli.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="Seek">
+                  <references>
+                    <reference name="frm_certif.List1_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="AddNew">
+                  <references>
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_cad_cli.Command1_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="DBEngine">
+              <members>
+                <member name="Workspaces">
+                  <references>
+                    <reference name="frm_principal.Form_Load" uses="1" />
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="MSMask" location="C:\Windows\SysWow64\msmask32.ocx" friendlyname="Microsoft Masked Edit Control 6.0 (SP6)" version="1.1.0" found="true">
+          <members>
+            <member name="MaskEdBox">
+              <members>
+                <member name="Mask">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.limpa_cad" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.mostra_cad" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.Command1_Click" uses="1" />
+                    <reference name="frm_cad_cli.limpa_form_cli" uses="6" />
+                  </references>
+                </member>
+                <member name="Text">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.limpa_cad" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.mostra_cad" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command1_Click" uses="3" />
+                    <reference name="frm_cad_cli.Command1_Click" uses="2" />
+                    <reference name="frm_cad_cli.limpa_form_cli" uses="3" />
+                  </references>
+                </member>
+                <member name="MaxLength">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.limpa_cad" uses="2" />
+                  </references>
+                </member>
+                <member name="SetFocus">
+                  <references>
+                    <reference name="frm_cad_cli.Command1_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="Crystal" location="C:\Windows\SysWow64\Crystl32.OCX" friendlyname="Crystal Report Control" version="5.2.0" found="true">
+          <members>
+            <member name="CrystalReport">
+              <members>
+                <member name="ReplaceSelectionFormula">
+                  <references>
+                    <reference name="frm_orcamento.Command4_Click" uses="1" />
+                    <reference name="frm_imp_orca.Command1_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Action">
+                  <references>
+                    <reference name="frm_orcamento.Command4_Click" uses="1" />
+                    <reference name="frm_imp_orca.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command1_Click" uses="1" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command2_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTA_CLI_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="ReportFileName">
+                  <references>
+                    <reference name="frm_imp_orca.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command1_Click" uses="1" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command2_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="RichTextLib" location="C:\WINDOWS\SysWow64\RICHTX32.OCX" friendlyname="Microsoft Rich Textbox Control 6.0" version="1.2.0" found="true">
+          <members>
+            <member name="RichTextBox">
+              <members>
+                <member name="Text">
+                  <references>
+                    <reference name="frm_orcamento.Command1_Click" uses="2" />
+                    <reference name="frm_orcamento.Command2_Click" uses="2" />
+                    <reference name="frm_orcamento.Command5_Click" uses="2" />
+                    <reference name="frm_orcamento.Command6_Click" uses="1" />
+                    <reference name="frm_orcamento.Command7_Click" uses="2" />
+                    <reference name="frm_orcamento.Command8_Click" uses="5" />
+                    <reference name="frm_orcamento.Command9_Click" uses="29" />
+                    <reference name="frm_orcamento.LINHA_Click" uses="2" />
+                    <reference name="frm_orcamento.List2_Click" uses="2" />
+                    <reference name="frm_orcamento.texto_Change" uses="1" />
+                  </references>
+                </member>
+                <member name="SetFocus">
+                  <references>
+                    <reference name="frm_orcamento.Command2_Click" uses="1" />
+                    <reference name="frm_orcamento.Command7_Click" uses="1" />
+                    <reference name="frm_orcamento.Command8_Click" uses="1" />
+                    <reference name="frm_orcamento.LINHA_Click" uses="1" />
+                    <reference name="frm_orcamento.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.List2_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Enabled">
+                  <references>
+                    <reference name="frm_orcamento.Command2_Click" uses="1" />
+                    <reference name="frm_orcamento.List1_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="SelStart">
+                  <references>
+                    <reference name="frm_orcamento.Command7_Click" uses="1" />
+                    <reference name="frm_orcamento.Command8_Click" uses="1" />
+                    <reference name="frm_orcamento.LINHA_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="TextRTF">
+                  <references>
+                    <reference name="frm_orcamento.List2_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="MSMAPI" location="C:\Windows\SysWow64\msmapi32.Ocx" friendlyname="Microsoft MAPI Controls 6.0 (SP6)" version="1.1.0" found="true">
+          <members>
+            <member name="MAPIMessages">
+              <members>
+                <member name="SessionID">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="Compose">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="RecipAddress">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="AddressResolveUI">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="ResolveName">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="Send">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="MAPISession">
+              <members>
+                <member name="Action">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+                <member name="SessionID">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="MSComDlg" location="C:\Windows\SysWow64\ComDlg32.OCX" friendlyname="Microsoft Common Dialog Control 6.0 (SP6)" version="1.2.0" found="true">
+          <members>
+            <member name="CommonDialog">
+              <members>
+                <member name="ShowOpen">
+                  <references>
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="FileName">
+                  <references>
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="VB" location="" friendlyname="" version="" found="true">
+          <members>
+            <member name="Form">
+              <members>
+                <member name="Caption">
+                  <references>
+                    <reference name="frm_principal.Form_Load" uses="1" />
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="ScaleWidth">
+                  <references>
+                    <reference name="frm_principal.Form_Resize" uses="1" />
+                  </references>
+                </member>
+                <member name="Show">
+                  <references>
+                    <reference name="frm_principal.mnu_adicionar_cli_Click" uses="1" />
+                    <reference name="frm_principal.mnu_grava_emp_tel_Click" uses="1" />
+                    <reference name="frm_principal.mnu_help_Click" uses="1" />
+                    <reference name="frm_principal.mnu_help2_Click" uses="1" />
+                    <reference name="frm_principal.mnu_orcamento_Click" uses="1" />
+                    <reference name="frm_principal.mnu_pesquisa_cli_Click" uses="1" />
+                    <reference name="frm_principal.mnu_rel_certificado_Click" uses="1" />
+                    <reference name="frm_principal.mnu_rel_orcamento_Click" uses="1" />
+                    <reference name="frm_principal.mnu_rel_recibo_Click" uses="1" />
+                    <reference name="frm_principal.mnu_senha_Click" uses="1" />
+                    <reference name="frm_principal.mnu_vencimentos_Click" uses="1" />
+                    <reference name="frm_principal.mnuteste_Click" uses="1" />
+                    <reference name="geral.Main" uses="2" />
+                    <reference name="geral.testa_senha" uses="2" />
+                    <reference name="geral.verifica_senha" uses="1" />
+                    <reference name="frm_recibo.mnu_senha_Click" uses="1" />
+                    <reference name="frm_cad_cli.bt_pesq_Click" uses="1" />
+                    <reference name="frm_cad_cli.bt_orca_Click" uses="1" />
+                    <reference name="frm_cad_cli.Command3_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Enabled">
+                  <references>
+                    <reference name="frm_principal.mnu_adicionar_cli_Click" uses="1" />
+                    <reference name="frm_principal.mnu_grava_emp_tel_Click" uses="1" />
+                    <reference name="frm_principal.mnu_help_Click" uses="1" />
+                    <reference name="frm_principal.mnu_help2_Click" uses="1" />
+                    <reference name="frm_principal.mnu_orcamento_Click" uses="1" />
+                    <reference name="frm_principal.mnu_pesquisa_cli_Click" uses="1" />
+                    <reference name="frm_principal.mnu_rel_certificado_Click" uses="1" />
+                    <reference name="frm_principal.mnu_rel_orcamento_Click" uses="1" />
+                    <reference name="frm_principal.mnu_rel_recibo_Click" uses="1" />
+                    <reference name="frm_principal.mnu_senha_Click" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.Form_Unload" uses="1" />
+                    <reference name="frm_orcamento.Form_Unload" uses="1" />
+                    <reference name="frm_imp_orca.Form_Unload" uses="1" />
+                    <reference name="frm_certif.Form_Unload" uses="1" />
+                    <reference name="frm_senha.Command1_Click" uses="1" />
+                    <reference name="frm_senha.Command2_Click" uses="1" />
+                    <reference name="frm_recibo.Form_Unload" uses="1" />
+                    <reference name="frm_recibo.mnu_senha_Click" uses="1" />
+                    <reference name="frm_cad_cli.Form_Unload" uses="1" />
+                    <reference name="Info_sistema.cmdOK_Click" uses="1" />
+                    <reference name="frm_cad_emp_tel.Form_Unload" uses="1" />
+                    <reference name="fmrHelp.Form_Unload" uses="1" />
+                  </references>
+                </member>
+                <member name="Cls">
+                  <references>
+                    <reference name="frm_orcamento.Command2_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Left">
+                  <references>
+                    <reference name="Info_sistema.GetKeyValue" uses="2" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="Menu">
+              <members />
+            </member>
+            <member name="PictureBox">
+              <members>
+                <member name="Left">
+                  <references>
+                    <reference name="frm_principal.Form_Resize" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="TextBox">
+              <members>
+                <member name="Text">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.limpa_cad" uses="5" />
+                    <reference name="FRMPESQUISA_CLI.mostra_cad" uses="5" />
+                    <reference name="FRMPESQUISA_CLI.Command1_Click" uses="9" />
+                    <reference name="FRMPESQUISA_CLI.Command3_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.email_DblClick" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.ender_KeyDown" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.nome_KeyDown" uses="2" />
+                    <reference name="frm_orcamento.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="2" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.List2_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command1_Click" uses="3" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="2" />
+                    <reference name="frm_certif.List1_Click" uses="3" />
+                    <reference name="frm_certif.nome_Change" uses="2" />
+                    <reference name="frm_senha.Command1_Click" uses="1" />
+                    <reference name="frm_senha.Text1_Change" uses="1" />
+                    <reference name="frm_senha.verifica_integridade" uses="2" />
+                    <reference name="frm_recibo.Command1_Click" uses="6" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="2" />
+                    <reference name="frm_recibo.List1_Click" uses="9" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="2" />
+                    <reference name="frm_recibo.valor_LostFocus" uses="2" />
+                    <reference name="Identif.Text1_KeyDown" uses="1" />
+                    <reference name="frm_cad_cli.Command1_Click" uses="5" />
+                    <reference name="frm_cad_cli.limpa_form_cli" uses="5" />
+                    <reference name="frm_cad_cli.nome_Change" uses="1" />
+                    <reference name="frm_cad_emp_tel.Command3_Click" uses="2" />
+                    <reference name="frm_cad_emp_tel.EMP_Change" uses="1" />
+                    <reference name="frm_cad_emp_tel.Form_Load" uses="2" />
+                  </references>
+                </member>
+                <member name="SetFocus">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command3_Click" uses="2" />
+                    <reference name="frm_cad_cli.Command1_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Enabled">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command3_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="2" />
+                    <reference name="frm_orcamento.Command2_Click" uses="1" />
+                    <reference name="frm_orcamento.texto_Change" uses="1" />
+                    <reference name="frm_senha.Text1_Change" uses="2" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="Label">
+              <members>
+                <member name="Caption">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.limpa_cad" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.mostra_cad" uses="1" />
+                    <reference name="frm_orcamento.Command2_Click" uses="1" />
+                    <reference name="frm_orcamento.Command5_Click" uses="1" />
+                    <reference name="frm_orcamento.Command6_Click" uses="1" />
+                    <reference name="frm_orcamento.Form_Load" uses="1" />
+                    <reference name="frm_orcamento.List1_Click" uses="7" />
+                    <reference name="frm_orcamento.List2_Click" uses="1" />
+                    <reference name="frm_orcamento.Option1_Click" uses="1" />
+                    <reference name="frm_orcamento.Option2_Click" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.List2_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                    <reference name="Info_sistema.Form_Load" uses="5" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="CommandButton">
+              <members>
+                <member name="Enabled">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="4" />
+                    <reference name="FRMPESQUISA_CLI.Command3_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="2" />
+                    <reference name="frm_orcamento.Command2_Click" uses="2" />
+                    <reference name="frm_orcamento.Command5_Click" uses="1" />
+                    <reference name="frm_orcamento.Command6_Click" uses="2" />
+                    <reference name="frm_orcamento.List2_Click" uses="2" />
+                    <reference name="frm_orcamento.texto_Change" uses="6" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.List2_Click" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_senha.Text1_Change" uses="3" />
+                    <reference name="frm_senha.Text2_Change" uses="2" />
+                    <reference name="frm_cad_cli.bt_pesq_Click" uses="1" />
+                    <reference name="frm_cad_cli.bt_orca_Click" uses="1" />
+                    <reference name="frm_cad_cli.nome_Change" uses="2" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="4" />
+                    <reference name="frm_cad_emp_tel.EMP_Change" uses="2" />
+                  </references>
+                </member>
+                <member name="Visible">
+                  <references>
+                    <reference name="frm_orcamento.Command2_Click" uses="1" />
+                    <reference name="frm_orcamento.Command5_Click" uses="1" />
+                    <reference name="frm_orcamento.Command6_Click" uses="1" />
+                    <reference name="frm_orcamento.List2_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="Line">
+              <members />
+            </member>
+            <member name="ListBox">
+              <members>
+                <member name="Clear">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="2" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="2" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                  </references>
+                </member>
+                <member name="AddItem">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="2" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="2" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="2" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="2" />
+                  </references>
+                </member>
+                <member name="Visible">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command3_Click" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.Command2_Click" uses="2" />
+                    <reference name="frm_orcamento.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="2" />
+                    <reference name="frm_orcamento.nome_LostFocus" uses="1" />
+                    <reference name="frm_orcamento.mostra_orca" uses="2" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_certif.List1_Click" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.List1_Click" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="ListCount">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.ender_KeyDown" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.nome_KeyDown" uses="1" />
+                    <reference name="frm_orcamento.Command6_Click" uses="1" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="2" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                  </references>
+                </member>
+                <member name="ListIndex">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.ender_KeyDown" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.nome_KeyDown" uses="1" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="1" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="6" />
+                  </references>
+                </member>
+                <member name="Text">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.List2_Click" uses="2" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_imp_orca.List2_Click" uses="2" />
+                    <reference name="frm_certif.List1_Click" uses="1" />
+                    <reference name="frm_recibo.List1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.LISTA_CLI_DblClick" uses="2" />
+                  </references>
+                </member>
+                <member name="Selected">
+                  <references>
+                    <reference name="frm_orcamento.Command6_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="RemoveItem">
+                  <references>
+                    <reference name="frm_orcamento.Command6_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="Top">
+                  <references>
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="OptionButton">
+              <members>
+                <member name="Value">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.Command3_Click" uses="2" />
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="2" />
+                    <reference name="frm_orcamento.nome_Change" uses="1" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.nome_Change" uses="1" />
+                    <reference name="frm_certif.Command3_Click" uses="1" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="1" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="Frame">
+              <members>
+                <member name="Visible">
+                  <references>
+                    <reference name="frm_imp_orca.Command3_Click" uses="1" />
+                    <reference name="frm_imp_orca.List1_Click" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="Enabled">
+                  <references>
+                    <reference name="frm_vencimento.todos_Click" uses="1" />
+                    <reference name="frm_vencimento.venc_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="CheckBox">
+              <members />
+            </member>
+            <member name="App">
+              <members>
+                <member name="Path">
+                  <references>
+                    <reference name="frm_principal.Form_Load" uses="1" />
+                    <reference name="frm_imp_orca.Command1_Click" uses="1" />
+                    <reference name="frm_certif.Command1_Click" uses="1" />
+                    <reference name="geral.Main" uses="1" />
+                    <reference name="geral.GetDriveSerialNumber" uses="1" />
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="5" />
+                    <reference name="geral.testa_senha" uses="4" />
+                    <reference name="geral.grava_arq_con_bd" uses="1" />
+                    <reference name="frm_senha.Command1_Click" uses="3" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command1_Click" uses="1" />
+                    <reference name="frm_vencimento.Command2_Click" uses="1" />
+                    <reference name="fmrHelp.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="Major">
+                  <references>
+                    <reference name="Info_sistema.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="Minor">
+                  <references>
+                    <reference name="Info_sistema.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="Revision">
+                  <references>
+                    <reference name="Info_sistema.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="Title">
+                  <references>
+                    <reference name="Info_sistema.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="LegalCopyright">
+                  <references>
+                    <reference name="Info_sistema.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="CompanyName">
+                  <references>
+                    <reference name="Info_sistema.Form_Load" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="MDIForm">
+              <members>
+                <member name="arquivo">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.pesquisa" uses="4" />
+                    <reference name="FRMPESQUISA_CLI.Command2_Click" uses="1" />
+                    <reference name="FRMPESQUISA_CLI.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.Form_Load" uses="2" />
+                    <reference name="frm_orcamento.List1_Click" uses="1" />
+                    <reference name="frm_orcamento.nome_Change" uses="2" />
+                    <reference name="frm_orcamento.nome_GotFocus" uses="2" />
+                    <reference name="frm_orcamento.mostra_orca" uses="1" />
+                    <reference name="frm_imp_orca.Command3_Click" uses="2" />
+                    <reference name="frm_imp_orca.Form_Load" uses="2" />
+                    <reference name="frm_imp_orca.List1_Click" uses="2" />
+                    <reference name="frm_imp_orca.nome_Change" uses="2" />
+                    <reference name="frm_certif.Command1_Click" uses="2" />
+                    <reference name="frm_certif.Command3_Click" uses="2" />
+                    <reference name="frm_certif.ender_Change" uses="1" />
+                    <reference name="frm_certif.Form_Load" uses="2" />
+                    <reference name="frm_certif.nome_Change" uses="1" />
+                    <reference name="frm_recibo.Command1_Click" uses="1" />
+                    <reference name="frm_recibo.Command3_Click" uses="2" />
+                    <reference name="frm_recibo.ender_Change" uses="1" />
+                    <reference name="frm_recibo.List1_Click" uses="1" />
+                    <reference name="frm_recibo.Form_Load" uses="1" />
+                    <reference name="frm_recibo.nome_Change" uses="1" />
+                    <reference name="frm_cad_cli.Form_Load" uses="1" />
+                    <reference name="frm_vencimento.RERODAR" uses="12" />
+                    <reference name="frm_vencimento.LISTAR_CLIENTES" uses="1" />
+                    <reference name="frm_vencimento.LISTA_CLI_DblClick" uses="2" />
+                    <reference name="frm_cad_emp_tel.Form_Load" uses="1" />
+                  </references>
+                </member>
+                <member name="bt_pesq">
+                  <references>
+                    <reference name="FRMPESQUISA_CLI.Command4_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="bt_orca">
+                  <references>
+                    <reference name="frm_orcamento.Command3_Click" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="PrestServ" location="" friendlyname="" version="" found="true">
+          <members>
+            <member name="Font">
+              <members />
+            </member>
+            <member name="record">
+              <members>
+                <member name="disco">
+                  <references>
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="4" />
+                  </references>
+                </member>
+                <member name="senha">
+                  <references>
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="3" />
+                  </references>
+                </member>
+                <member name="nome_emp">
+                  <references>
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="4" />
+                  </references>
+                </member>
+                <member name="data">
+                  <references>
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="9" />
+                  </references>
+                </member>
+                <member name="mes_ano">
+                  <references>
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="4" />
+                  </references>
+                </member>
+                <member name="n_registro">
+                  <references>
+                    <reference name="geral.cria_arq_ll" uses="1" />
+                    <reference name="geral.testa_copia" uses="7" />
+                  </references>
+                </member>
+              </members>
+            </member>
+            <member name="geral">
+              <members>
+                <member name="grava_arq_con_bd">
+                  <references>
+                    <reference name="frm_principal.mnu_con_outro_bd_Click" uses="1" />
+                  </references>
+                </member>
+                <member name="verifica_senha">
+                  <references>
+                    <reference name="Identif.Text1_KeyDown" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="Scripting" location="" friendlyname="" version="" found="true">
+          <members>
+            <member name="FileSystemObject">
+              <members>
+                <member name="GetDrive">
+                  <references>
+                    <reference name="geral.GetDriveSerialNumber" uses="2" />
+                  </references>
+                </member>
+                <member name="GetDriveName">
+                  <references>
+                    <reference name="geral.GetDriveSerialNumber" uses="1" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+        <library name="geral" location="" friendlyname="" version="" found="true">
+          <members>
+            <member name="record">
+              <members>
+                <member name="disco">
+                  <references>
+                    <reference name="geral.testa_senha" uses="3" />
+                    <reference name="frm_senha.Command1_Click" uses="3" />
+                  </references>
+                </member>
+                <member name="senha">
+                  <references>
+                    <reference name="geral.testa_senha" uses="5" />
+                    <reference name="frm_senha.Command1_Click" uses="4" />
+                  </references>
+                </member>
+                <member name="nome_emp">
+                  <references>
+                    <reference name="geral.testa_senha" uses="3" />
+                    <reference name="frm_senha.Command1_Click" uses="3" />
+                  </references>
+                </member>
+                <member name="data">
+                  <references>
+                    <reference name="geral.testa_senha" uses="3" />
+                    <reference name="frm_senha.Command1_Click" uses="3" />
+                  </references>
+                </member>
+                <member name="mes_ano">
+                  <references>
+                    <reference name="geral.testa_senha" uses="3" />
+                    <reference name="frm_senha.Command1_Click" uses="3" />
+                  </references>
+                </member>
+              </members>
+            </member>
+          </members>
+        </library>
+      </libraries>
+      <issues>
+        <issue id="4002" description="A component referenced in the Visual Basic 6.0 project could not be loaded during the upgrade process" count="1" />
+        <issue id="2064" description="Property or method cannot be automatically upgraded due to differences between Visual Basic 6.0 and Visual Basic .NET" count="24" />
+        <issue id="2065" description="Property or method has a new behavior after being upgraded to Visual Basic .NET" count="32" />
+        <issue id="2036" description="Cannot set a custom MousePointer" count="1" />
+        <issue id="2056" description="Property ItemData was not upgraded" count="6" />
+        <issue id="2038" description="Form property ScaleMode is not supported" count="1" />
+        <issue id="2075" description="Event may fire when form is initialized" count="34" />
+        <issue id="1037" description="Couldn't resolve default property of object" count="28" />
+        <issue id="1029" description="Setting an object variable to Nothing does not destroy the object. Object may not be destroyed until it is garbage collected" count="2" />
+        <issue id="1041" description="Function has a new behavior in .NET" count="6" />
+        <issue id="1051" description="Declaration type not supported" count="2" />
+        <issue id="2069" description="Some objects cannot be upgraded. Properties or methods of those objects have been copied into the upgraded code, but they will not compile because the underlying objects were not upgraded" count="1" />
+      </issues>
+    </project>
+  </projects>
+</AssessmentReport>

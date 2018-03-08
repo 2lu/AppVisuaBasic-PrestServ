@@ -1,0 +1,218 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\PRESTSERV\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=Yes
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+U2FRTF.DLL=C:\Users\ll\Downloads\U2FRTF.DLL
+
+[Package|Standard Setup Package 1|Files Released]
+disco.exe=
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Program Files (x86)\Common Files\Adobe\Acrobat\ActiveX\AcroPDF.dll=
+C:\Program Files (x86)\Adobe\Reader 11.0\Reader\adoberfp.dll=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\Windows\SysWOW64\Crystl32.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+c:\prestserv\clientes.mdb=
+c:\prestserv\imp_certificado.rpt=
+c:\prestserv\imp_etiq.rpt=
+c:\prestserv\imp_lista.rpt=
+c:\prestserv\imp_orcamento.rpt=
+c:\prestserv\imp_recibo.rpt=
+c:\prestserv\crpe32.dep=
+C:\PRESTSERV\PrestServ.pdf=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\windows\syswow64\crpe32.dll=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\PRESTSERV\PrestServ.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files (x86)\Common Files\DESIGNER\MSDERUN.DLL=Yes
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO2535.TLB=Yes
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO350.DLL=Yes
+C:\Windows\System32\MSJET35.DLL=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\MSJINT35.DLL=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\MSREPL35.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Windows\SysWOW64\MSMASK32.OCX=Yes
+C:\Windows\SysWOW64\Crystl32.OCX=Yes
+C:\Windows\SysWOW64\crpe32.dll=No
+C:\Windows\SysWOW64\RICHTX32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\SysWOW64\MSMAPI32.OCX=Yes
+C:\Windows\SysWOW64\COMDLG32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\PRESTSERV\CLIENTES.mdb=Yes
+C:\PRESTSERV\imp_certificado.rpt=Yes
+C:\PRESTSERV\IMP_ETIQ.RPT=Yes
+C:\PRESTSERV\imp_lista.rpt=Yes
+C:\PRESTSERV\imp_orcamento.rpt=Yes
+C:\PRESTSERV\imp_recibo.rpt=Yes
+C:\PRESTSERV\Crpe32.dep=Yes
+C:\Windows\SysWOW64\implode.dll=Yes
+C:\Windows\SysWOW64\pg32.dll=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\CO2C40EN.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT20.DLL=Yes
+C:\Windows\Crystal\Crxlat32.dll=Yes
+C:\Windows\SysWOW64\p2bbnd.dll=Yes
+C:\Windows\SysWOW64\p2bdao.dll=Yes
+C:\Windows\SysWOW64\p2ctdao.dll=Yes
+C:\Windows\SysWOW64\p2irdao.dll=Yes
+C:\Windows\SysWOW64\p2sodbc.dll=Yes
+C:\Windows\SysWOW64\u2ddisk.dll=Yes
+C:\Windows\Crystal\u2dmapi.dll=Yes
+C:\Windows\Crystal\u2fcr.dll=Yes
+C:\Windows\Crystal\u2fdif.dll=Yes
+C:\Windows\Crystal\u2fhtml.dll=Yes
+C:\Windows\Crystal\u2frec.dll=Yes
+C:\Users\ll\Downloads\U2FRTF.DLL=Yes
+C:\Windows\Crystal\u2fsepv.dll=Yes
+C:\Windows\Crystal\u2ftext.dll=Yes
+C:\Windows\Crystal\u2fwks.dll=Yes
+C:\Windows\Crystal\u2fwordw.dll=Yes
+C:\Windows\Crystal\u2fxls.dll=Yes
+C:\Program Files (x86)\Adobe\Reader 11.0\Reader\adoberfp.dll=Yes
+C:\Program Files (x86)\Common Files\Adobe\Acrobat\ActiveX\AcroPDF.dll=Yes
+C:\PRESTSERV\PrestServ.pdf=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\PRESTSERV\PrestServ.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Common Files\DESIGNER\MSDERUN.DLL=$(CommonFiles)\designer
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO2535.TLB=$(MSDAOPath)
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\crpe32.dll=$(WinSysPath)
+C:\Windows\SysWOW64\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSMAPI32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\COMDLG32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\SysWOW64\Crystl32.OCX=$(WinSysPath)
+C:\PRESTSERV\CLIENTES.mdb=$(AppPath)
+C:\PRESTSERV\DISCO.EXE=$(AppPath)
+C:\PRESTSERV\imp_certificado.rpt=$(AppPath)
+C:\PRESTSERV\IMP_ETIQ.RPT=$(AppPath)
+C:\PRESTSERV\imp_lista.rpt=$(AppPath)
+C:\PRESTSERV\imp_orcamento.rpt=$(AppPath)
+C:\PRESTSERV\imp_recibo.rpt=$(AppPath)
+C:\PRESTSERV\Crpe32.dep=$(AppPath)
+C:\Windows\SysWOW64\implode.dll=$(WinSysPath)
+C:\Windows\SysWOW64\pg32.dll=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\CO2C40EN.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT20.DLL=$(WinSysPathSysFile)
+C:\Windows\Crystal\Crxlat32.dll=$(WinPath)\Crystal
+C:\Windows\SysWOW64\p2bbnd.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2bdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2ctdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2irdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2sodbc.dll=$(WinSysPath)
+C:\Windows\SysWOW64\u2ddisk.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2dmapi.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fcr.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fdif.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fhtml.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2frec.dll=$(WinPath)\Crystal
+C:\Users\ll\Downloads\U2FRTF.DLL=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fsepv.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2ftext.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fwks.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fwordw.dll=$(WinPath)\Crystal
+C:\Windows\Crystal\u2fxls.dll=$(WinPath)\Crystal
+C:\Program Files (x86)\Adobe\Reader 11.0\Reader\adoberfp.dll=$(WinSysPath)
+C:\Program Files (x86)\Common Files\Adobe\Acrobat\ActiveX\AcroPDF.dll=$(WinSysPath)
+C:\PRESTSERV\PrestServ.pdf=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\PRESTSERV\PrestServ.exe=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\PRESTSERV\CLIENTES.mdb=Yes
+C:\PRESTSERV\DISCO.EXE=No
+C:\PRESTSERV\imp_certificado.rpt=No
+C:\PRESTSERV\IMP_ETIQ.RPT=No
+C:\PRESTSERV\imp_lista.rpt=No
+C:\PRESTSERV\imp_orcamento.rpt=No
+C:\PRESTSERV\imp_recibo.rpt=No
+C:\PRESTSERV\Crpe32.dep=No
+C:\PRESTSERV\PrestServ.pdf=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=PrestServ 1.5
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\PRESTSERV\Package
+ProjectFolder=C:\PRESTSERV
+ServerSideCab=
+File1=C:\PRESTSERV\Package\setup.exe
+File2=C:\PRESTSERV\Package\Setup.Lst
+File3=C:\PRESTSERV\Package\PrestServ.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=PrestServ
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|PrestServ]
+Icon1=PrestServ.exe
+Title1=PrestServ
+StartIn1=$(AppPath)
+Key1=Icon1
